@@ -41,7 +41,11 @@ data "aws_ami" "centos7" {
   owners = [
     "679593333241"]
   # CentOS
-
+  filter {
+      name = "product-code"
+      values = ["aw0evgkw8e5c1q413zgy5pjce"]
+  }
+  
   filter {
     name = "name"
     values = [
